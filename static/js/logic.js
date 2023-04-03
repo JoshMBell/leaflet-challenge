@@ -69,6 +69,5 @@ d3.json(geoData).then(function (data) {
         <p>
         <h3>Depth(m): ${earthquakes[i].depth.toLocaleString()}</h3>`
       ).addTo(geoMap);
-      
   }
 });
