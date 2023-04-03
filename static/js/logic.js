@@ -65,7 +65,10 @@ d3.json(geoData).then(function (data) {
       })
       .bindPopup(
         `<h1>Details</h1>
-        <hr> <h3>Magnitude: ${earthquakes[i].magnitude.toLocaleString()}</h3>
+        <hr>
+        <h3>Location: <p>Lat ${earthquakes[i].location[1]}, Long ${earthquakes[i].location[0]}</h3>
+        <p>
+        <h3>Magnitude: ${earthquakes[i].magnitude.toLocaleString()}</h3>
         <p>
         <h3>Depth(m): ${earthquakes[i].depth.toLocaleString()}</h3>`
       ).addTo(geoMap);
